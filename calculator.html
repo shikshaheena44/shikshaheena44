@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html><head><title>Calculator</title>
+<style>body{text-align:center} .calc{width:200px;margin:auto;background:#eee;padding:20px} button{width:40px;height:40px;margin:5px}</style>
+</head><body>
+<h2>Calculator by Shaheena</h2>
+<div class="calc"><input id="res" style="width:90%"><br>
+<button onclick="document.getElementById('res').value=''">C</button>
+<button onclick="document.getElementById('res').value+='1'">1</button>
+<button onclick="document.getElementById('res').value+='2'">2</button>
+<button onclick="document.getElementById('res').value+='+'">+</button><br>
+<button onclick="document.getElementById('res').value+='3'">3</button>
+<button onclick="document.getElementById('res').value+='4'">4</button>
+<button onclick="document.getElementById('res').value+='5'">5</button>
+<button onclick="document.getElementById('res').value+='-'">-</button><br>
+<button onclick="document.getElementById('res').value=eval(document.getElementById('res').value)">=</button>
+</div></body></html>
