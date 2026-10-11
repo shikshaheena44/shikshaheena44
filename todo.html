@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html><head><title>Shaheena's To-Do App</title>
+<style>body{font-family:Arial;text-align:center;padding:20px}input{padding:10px;width:60%}button{padding:10px;background:purple;color:white}li{list-style:none;margin:10px}</style>
+</head><body>
+<h2>✅ Shaheena's To-Do List</h2>
+<input id="task" placeholder="Task likho..."><button onclick="add()">Add</button>
+<ul id="list"></ul>
+<script>function add(){let t=document.getElementById('task').value;if(t){let li=document.createElement('li');li.textContent=t;li.onclick=function(){this.remove()};document.getElementById('list').appendChild(li);document.getElementById('task').value='';}}</script>
+<p>Made by Shaheena - BTech CSE | Pavagada</p>
+</body></html>
