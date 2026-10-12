@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Weather App - Shaheena</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{font-family:Arial; text-align:center; background: linear-gradient(to right, #74ebd5, #ACB6E5); padding:20px;}
+.box{background:white; padding:20px; border-radius:15px; max-width:350px; margin:auto; box-shadow:0 5px 15px rgba(0,0,0,0.2);}
+input{padding:10px; width:80%; border-radius:8px; border:1px solid #ccc;}
+button{padding:10px 20px; margin-top:10px; background:#4CAF50; color:white; border:none; border-radius:8px; cursor:pointer;}
+#result{margin-top:15px; font-size:18px;}
+</style>
+</head>
+<body>
+<div class="box">
+<h2>🌤️ Weather App</h2>
+<p>Made by Shaheena from Pavagada</p>
+<input type="text" id="city" placeholder="Enter City like Pavagada">
+<br>
+<button onclick="getWeather()">Check Weather</button>
+<div id="result"></div>
+</div>
+
+<script>
+function getWeather(){
+let city = document.getElementById('city').value;
+if(city==""){
+document.getElementById('result').innerHTML="Please enter city name";
+return;
+}
+document.getElementById('result').innerHTML = "☀️ Weather in " + city + " is Sunny 28°C<br><br> (Demo Data - API will be added soon)";
+}
+</script>
+</body>
+</html>
